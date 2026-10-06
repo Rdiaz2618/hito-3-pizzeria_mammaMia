@@ -1,17 +1,18 @@
-# Pizzería Mamma Mia! - Hito 2
+# Pizzería Mamma Mia! - Hito 3
 
-Proyecto del Hito 2 de la Academia Desafío Latam - Estados de los componentes y eventos.
+Proyecto del Hito 3 de la Academia Desafío Latam - Renderización dinámica de componentes.
 
 ## Descripción
 
-Aplicación web desarrollada con **React** y **Vite.js** que toma como base el Hito 1 de Pizzería Mamma Mia e incorpora formularios controlados de registro e inicio de sesión.
+Aplicación web desarrollada con **React** y **Vite.js** que toma como base los hitos anteriores de Pizzería Mamma Mia e incorpora renderización dinámica de pizzas y un carrito de compras interactivo.
 
 ## Componentes
 
 - **Navbar**: menú de navegación con opciones de Inicio, Iniciar sesión/Registrarse o Perfil/Cerrar sesión (según el estado de la variable `token`), y el total de la compra formateado.
 - **Header**: título y descripción de bienvenida sobre una imagen de fondo.
 - **Home**: página principal, contiene el `Header` y el listado de pizzas.
-- **CardPizza**: card reutilizable que recibe por props el nombre, precio, ingredientes e imagen de cada pizza.
+- **CardPizza**: card reutilizable que recibe por props el nombre, precio, ingredientes e imagen de cada pizza, renderizando cada ingrediente en una lista.
+- **Cart**: carrito de compras que permite aumentar y disminuir cantidades, elimina productos con cantidad cero y calcula el total.
 - **Registro**: formulario de registro con correo electrónico, contraseña, confirmación de contraseña y validaciones.
 - **InicioSesion**: formulario de inicio de sesión con correo electrónico, contraseña y validaciones.
 - **Footer**: pie de página con la información de derechos reservados.
